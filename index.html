@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShadowCity2.0 – Minecraft Server</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>ShadowCity2.0</h1>
+      <p>Der ultimative Minecraft 1.20.1 Server mit All of Create 1.4</p>
+      <p class="server-ip">
+        Server-IP: <strong id="serverIP">shadowcity.g-portal.game</strong>
+        <button onclick="copyIP()" class="copy-btn">📋 Kopieren</button>
+      </p>
+      <a href="https://discord.gg/ZmsVkrHF8X" class="discord-button">Trete unserem Discord bei</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="features">
+      <h2>Unsere Highlights</h2>
+      <ul>
+        <li>Exklusive Quests & Abenteuer</li>
+        <li>Individuelle ShadowCity 2.0 Features</li>
+        <li>Community-Events & Wettbewerbe</li>
+        <li>All of Create 1.4 Modpack integriert</li>
+      </ul>
+    </section>
+
+    <section class="rules">
+      <h2>Server-Regeln</h2>
+      <ul>
+        <li>Kein Griefen oder Stehlen</li>
+        <li>Keine Beleidigungen oder Hassreden</li>
+        <li>Respekt gegenüber allen Spielern</li>
+        <li>Discord-Regeln sind verbindlich</li>
+      </ul>
+    </section>
+
+    <section class="discord">
+      <h2>Unser Discord</h2>
+      <iframe src="https://discord.com/widget?id=1400138863120220172&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </section>
+
+    <section class="status">
+      <h2>Server-Status</h2>
+      <img src="https://api.mcstatus.io/v2/java/shadowcity.g-portal.game/favicon" alt="Server Icon">
+      <p>Spieler online: <img src="https://api.mcstatus.io/v2/java/shadowcity.g-portal.game/players" alt="Player Count"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ShadowCity2.0 – Community Server | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+
+  <script>
+  function copyIP() {
+    const ip = document.getElementById("serverIP").innerText;
+    navigator.clipboard.writeText(ip);
+    alert("✅ Server-IP kopiert: " + ip);
+  }
+  </script>
+</body>
+</html>
